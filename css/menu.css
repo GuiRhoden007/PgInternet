@@ -1,152 +1,64 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e0f0ff; /* Azul claro */
     color: #333;
-    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
 }
 
 header {
-    background-color: #2c3e50;
-    color: white;
-    padding: 20px;
-    text-align: center;
+    background-color: #1e3a5f; /* Azul escuro */
+    padding: 10px;
 }
 
 header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+    color: white;
+    text-align: center;
 }
 
 header nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
+    text-align: center;
 }
 
 header nav ul li {
-    display: inline;
-    margin: 0 20px;
+    display: inline-block;
+    position: relative;
 }
 
 header nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 1.1rem;
+    padding: 10px 20px;
+    display: block;
+    background-color: #3d6b8b; /* Azul médio */
+    border-radius: 5px;
+    margin: 5px;
 }
 
 header nav ul li a:hover {
-    color: #1abc9c;
+    background-color: #1a3d55; /* Azul mais escuro */
 }
 
-/* Seção Filmes */
-#movies {
-    padding: 40px 20px;
-    background-color: #ecf0f1;
-    text-align: center;
-}
-
-#movies h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #2c3e50;
-}
-
-.movies-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.movie {
-    background-color: white;
-    padding: 15px;
-    border-radius: 10px;
-    width: 200px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease;
-}
-
-.movie img {
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 10px;
-}
-
-.movie h3 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    color: #34495e;
-}
-
-.movie p {
-    font-size: 0.9rem;
-    margin-bottom: 15px;
-}
-
-.movie a {
-    display: inline-block;
-    color: #2980b9;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.movie a:hover {
-    color: #1abc9c;
-}
-
-.movie:hover {
-    transform: translateY(-5px);
-}
-
-/* Seção Sobre */
-#about {
-    padding: 40px 20px;
-    background-color: #fff;
-    text-align: center;
-}
-
-#about h2 {
-    font-size: 2rem;
-    color: #2c3e50;
-    margin-bottom: 20px;
-}
-
-#about p {
-    font-size: 1.1rem;
-    color: #7f8c8d;
-    margin: 0 auto;
-    max-width: 800px;
-}
-
-/* Seção Contato */
-#contact {
-    padding: 40px 20px;
-    background-color: #2c3e50;
-    color: white;
-    text-align: center;
-}
-
-#contact h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-#contact ul {
+header nav ul .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #3d6b8b; /* Azul médio */
     list-style-type: none;
     padding: 0;
+    margin: 0;
+    border-radius: 5px;
 }
 
-#contact ul li {
-    margin: 10px 0;
+header nav ul li:hover .submenu {
+    display: block;
 }
 
-#contact a {
-    color: #1abc9c;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-#contact a:hover {
-    color: #16a085;
+header nav ul .submenu li {
+    width: 200px;
 }
