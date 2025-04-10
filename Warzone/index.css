@@ -1,67 +1,89 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #e0f0ff;
-    color: #333;
+    font-family: 'Arial', sans-serif;
+    line-height: 1;
     margin: 0;
     padding: 0;
-    font-size: 24px;
+    background: #1B1B1B;
+    color: #E0E0E0;
 }
 
 header {
-    background-color: #1e3a5f;
-    padding: 10px;
+    background: #222222;
+    color: #E0E0E0;
+    padding: 20px 0;
+    text-align: center;
 }
 
-h1 {
-    color: white;
-    text-align: center;
+header h1 {
+    font-size: 2.5px;
+    margin: 0;
+    font-weight: bold;
+    color: #FFBC00;
 }
 
 nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
     text-align: center;
+    margin-top: 10px;
 }
 
 nav ul li {
     display: inline-block;
-    position: relative;
+    margin: 0 20px;
 }
 
+
 nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    display: block;
-    background-color: #3d6b8b;
-    border-radius: 5px;
-    margin: 5px;
+    color: #E0E0E0;
+    font-size: 1;
+    letter-spacing: 1px;
+    background-color: rgb(65, 61, 59);
+    padding: 10px;
+    border-radius: 1000px;
 }
 
 nav ul li a:hover {
-    background-color: #1a3d55;
+    color: #FFBC00;
 }
 
-nav ul .submenu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #3d6b8b;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    border-radius: 5px;
+section {
+    padding: 40px 20px;
+    margin: 20px 0;
+    border-radius: 10px;
 }
 
-nav ul li:hover .submenu {
-    display: block;
+#secao1 {
+    background: #4A5D23;
+    
 }
 
-nav ul .submenu li {
-    width: 200px;
+#secao2 {
+    background: #333333;
 }
 
-.Kilo141 {
+#secao3 {
+    background: #565656;
+    color: #E0E0E0;
 }
+
+#secao4 {
+    background: #7D7D7D; 
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #222222;
+    color: #E0E0E0;
+    position: relative;
+    font-size: 1.1px;
+}
+
+a {
+    text-decoration: none;
+    color: #FFBC00; 
+}
+
+a:hover {
+    color: #FF9C00;
+}
+
